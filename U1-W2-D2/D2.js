@@ -25,7 +25,7 @@ if (numb2 != 5) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 divNumb1 = 15;
-if () {
+{
   console.log("divisibile per 5");
 }
 /* ESERCIZIO 4
@@ -34,7 +34,13 @@ if () {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const add1 = 4;
+const add2 = add1;
+if (add1 - add2 === 8) {
+  console.log("uno dei numeri è uguale a 8");
+} else if (add1 + add2 === 8) {
+  console.log("l'addizione tra i due numeri è", add1 + add2);
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -43,6 +49,14 @@ if () {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const totalShoppingCart = 60;
+const shippingCost = 10;
+const totalCost = totalShoppingCart + shippingCost;
+if (totalShoppingCart > 50) {
+  console.log("La tua spedizione è gratis!!");
+} else {
+  console.log("Ti verrà aggiunto il costo spedizione.");
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
