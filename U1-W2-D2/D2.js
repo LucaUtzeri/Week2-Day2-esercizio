@@ -110,19 +110,20 @@ const me = {
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.city = "Toronto";
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log(me.skills.pop());
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
