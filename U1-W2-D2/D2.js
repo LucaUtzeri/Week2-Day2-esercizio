@@ -64,7 +64,12 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const discount = totalShoppingCart * 0.2;
+if (discount > 50) {
+  console.log("Final price:", discount);
+} else {
+  console.log("Final price:", discount + shippingCost + "€, including shipping fee");
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -72,13 +77,23 @@ if (totalShoppingCart > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let valueArray = [10, 4, 1, 7];
+valueArray.sort(function (a, b) {
+  return a - b;
+});
+console.log(valueArray);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let value = 9;
+if (typeof value === "number") {
+  console.log("this variable is a number");
+} else {
+  console.log("this variable is not a number");
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
@@ -129,9 +144,14 @@ console.log(me.skills.pop());
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let array = [];
+array.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(array);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+array.pop();
+array.push(100);
+console.log(array);
